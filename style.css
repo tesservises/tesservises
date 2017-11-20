@@ -7,12 +7,12 @@
 }
 
 body {
-    background-color: #f7f7f7;
+
     font-family: 'Roboto', sans-serif;
 }
 
 #header {
-    min-width: 1300px;
+    min-width: 1280px;
     border-bottom: 1px solid #b5b7ba;
     background-color: #dfdfdf;
     margin: 0 auto;
@@ -26,7 +26,7 @@ body {
 }
 
 #center {
-    width: 1300px;
+    width: 1280px;
     margin: 0 auto;
 }
 
@@ -46,8 +46,8 @@ body {
 }
 
 #content {
-    height: 806px;
-    min-width: 1300px;
+    height: 720px;
+    min-width: 1280px;
     margin: 0 auto;
     min-height: calc(100vh - 140px);
 }
