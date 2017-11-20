@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href="style.css" rel="stylesheet" type="" />
+  <meta charset="utf-8">
+	<title>TES Servis</title>
+    </head><br>
+    <script type="text/javascript">
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+"июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+if (day <= 9) day = "0" + day;
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
+" г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+  <body>
+    <span id="doc_time">
+ Дата и время
+</span>
+<script type="text/javascript">
+ clock();
+</script>
+<br>TES Servis - Ardiuno edit<br>
+Сайт в процессе создания.<br><br>
+<img src= "3d-cnc.jpg" alt="3d-cnc.jpg" width='800'>
+  </body>
+</html>
