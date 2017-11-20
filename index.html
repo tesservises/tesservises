@@ -5,8 +5,26 @@
   <link href="style.css" rel="stylesheet" type="" />
   <meta charset="utf-8">
 	<title>TES Servis</title>
-    </head><br>
-    <script type="text/javascript">
+    </head>
+    <div id="content">
+    <div id="header">
+        <a href="#">1</a> <span>/</span>
+        <a href="#">2</a> <span>/</span>
+        <a href="#">3</a> <span>/</span>
+        <a href="#">4</a>
+    </div>
+    <h1>TES Servis - Ardiuno edit</h1>
+    <div id="center">
+        <img src="3d-cnc.jpg" alt="3d-cnc.jpg">
+        <div id="box_text">
+            <p>Сайт в процессе создания<br><br><b>2</b>3<i>4</i>5</p>
+            <p>1<a href="#" target="_blank">2</a></p>
+            <p>1</p>
+            <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a>
+          </div>
+    </div>
+</div>
+<script type="text/javascript">
 function clock() {
 var d = new Date();
 var month_num = d.getMonth()
@@ -23,43 +41,24 @@ if (hours <= 9) hours = "0" + hours;
 if (minutes <= 9) minutes = "0" + minutes;
 if (seconds <= 9) seconds = "0" + seconds;
 
-date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
+date_time = "&nbspСегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
 " г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
 if (document.layers) {
- document.layers.doc_time.document.write(date_time);
- document.layers.doc_time.document.close();
+document.layers.doc_time.document.write(date_time);
+document.layers.doc_time.document.close();
 }
 else document.getElementById("doc_time").innerHTML = date_time;
- setTimeout("clock()", 1000);
+setTimeout("clock()", 1000);
 }
 </script>
-  <body>
-    <span id="doc_time">
- Дата и время
+<body>
+<span id="doc_time">
+Дата и время
 </span>
 <script type="text/javascript">
- clock();
-</script><br><br>
-<div id="content">
-    <div id="header">
-        <a href="#">1</a> <span>/</span>
-        <a href="#">2</a> <span>/</span>
-        <a href="#">3</a> <span>/</span>
-        <a href="#">4</a>
-    </div>
-    <h1>TES Servis - Ardiuno edit</h1>
-    <div id="center">
-        <img src="3d-cnc.jpg" alt="3d-cnc.jpg">
-        <div id="box_text">
-            <p>Сайт в процессе создания<br><br><b>2</b>3<i>4</i>5</p>
-            <p>1<a href="#" target="_blank">2</a></p>
-            <p>1</p>
-            <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a>
-            <br>
-            <br>
-        </div>
-    </div>
-</div>
+clock();
+</script>
+<br>
 <div id="footer">Copyright © 2016 <a href="#" target="_blank">1</a></div>
   </body>
 </html>
