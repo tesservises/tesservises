@@ -80,12 +80,12 @@ body {
 
 #content img {
     margin-left: 17px;
-    width: 389px;
+    width: 250px;
     border-radius: 50%;
 }
 
 #content #box_text {
-    width: 671px;
+    width: 970px;
     background-color: #ffffff;
     float: right;
     padding: 49px 48px 51px 76px;
