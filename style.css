@@ -12,7 +12,7 @@ body {
 }
 
 #header {
-    min-width: 1280px;
+    min-width: 100%;
     border-bottom: 1px solid #b5b7ba;
     background-color: #dfdfdf;
     margin: 0 auto;
